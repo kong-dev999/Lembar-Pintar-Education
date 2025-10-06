@@ -107,7 +107,7 @@ export default function Testimonial() {
     const visibleTestimonials = testimonials.slice(0, visibleCount);
 
     return (
-        <section className="relative w-full bg-gradient-to-b from-slate-50 to-white py-12 sm:py-16 md:py-20 lg:py-24">
+        <section className="relative w-full bg-gradient-to-b from-slate-50 to-white py-8 sm:py-12 md:py-12 lg:py-2">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Heading */}
                 <motion.div
@@ -129,7 +129,7 @@ export default function Testimonial() {
                 </motion.div>
 
                 {/* Grid dengan responsive columns */}
-                <div className="mt-8 sm:mt-12 lg:mt-16">
+                <div className="mt-4 sm:mt-6 lg:mt-8">
                     <AnimatePresence mode="wait">
                         <motion.div
                             className="grid grid-cols-1 gap-4 sm:gap-6 

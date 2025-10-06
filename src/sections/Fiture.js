@@ -44,10 +44,10 @@ export default function FeatureTabs() {
   const tabData = tabs.find((t) => t.key === activeTab);
 
   return (
-    <section id="fitur" className="w-full bg-gradient-to-b from-slate-50 to-white py-20">
+    <section id="fitur" className="w-full bg-gradient-to-b from-slate-50 to-white py-6">
       <div className="mx-auto max-w-7xl px-6">
         {/* Anchor for scroll offset */}
-        <div id="fitur-tabs-anchor" style={{ marginTop: '-80px', height: '80px' }}></div>
+  <div id="fitur-tabs-anchor" style={{ marginTop: '-48px', height: '48px' }}></div>
         <h2 className="mb-8 text-center text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           Fitur yang Membuat{" "}
           <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
@@ -78,7 +78,7 @@ export default function FeatureTabs() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-10 grid grid-cols-1 items-center gap-10 md:grid-cols-2"
+            className="mt-6 grid grid-cols-1 items-center gap-8 md:grid-cols-2"
           >
             <div>
               <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">

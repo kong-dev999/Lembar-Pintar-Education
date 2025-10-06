@@ -64,12 +64,12 @@ export default function StudentPage() {
                                         onClick={() => { setActiveDropdown(activeDropdown === 'template' ? null : 'template'); setActiveNav('template'); }}
                                     >
                                         Template
-                                        <svg className="ml-1 h-4 w-4 text-slate-900 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <svg className={["ml-1 h-4 w-4 text-slate-900 group-hover:text-white transform transition-transform duration-200", activeDropdown === 'template' ? 'rotate-180' : 'rotate-0'].join(' ')} fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </button>
                                     {activeDropdown === 'template' && (
-                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black" style={{ borderRadius: '1rem', top: '100%' }}>
+                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200" style={{ borderRadius: '1rem', top: '100%' }}>
                                             <ul className="py-2 px-2 text-center">
                                                 <li className="relative">
                                                     <button
@@ -94,7 +94,7 @@ export default function StudentPage() {
                                                         </span>
                                                     </button>
                                                     {activeSubmenu === 'sd' && (
-                                                        <div className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black" style={{ borderRadius: '1rem' }}>
+                                                        <div className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200" style={{ borderRadius: '1rem' }}>
                                                             <ul className="py-2 px-2 text-center">
                                                                 <li><Link href="/kelas/SD/1" className="block w-full px-4 py-2 text-center border-b border-gray-100 hover:bg-blue-600 hover:text-white rounded">Kelas 1</Link></li>
                                                                 <li><Link href="/kelas/SD/2" className="block w-full px-4 py-2 text-center border-b border-gray-100 hover:bg-blue-600 hover:text-white rounded">Kelas 2</Link></li>
@@ -129,7 +129,7 @@ export default function StudentPage() {
                                                         </span>
                                                     </button>
                                                     {activeSubmenu === 'smp' && (
-                                                        <div className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black" style={{ borderRadius: '1rem' }}>
+                                                        <div className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200" style={{ borderRadius: '1rem' }}>
                                                             <ul className="py-2 px-2 text-center">
                                                                 <li><Link href="/kelas/SMP/7" className="block w-full px-4 py-2 text-center border-b border-gray-100 hover:bg-blue-600 hover:text-white rounded-t-xl">Kelas 7</Link></li>
                                                                 <li><Link href="/kelas/SMP/8" className="block w-full px-4 py-2 text-center border-b border-gray-100 hover:bg-blue-600 hover:text-white">Kelas 8</Link></li>
@@ -161,7 +161,7 @@ export default function StudentPage() {
                                                         </span>
                                                     </button>
                                                     {activeSubmenu === 'sma' && (
-                                                        <div className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black" style={{ borderRadius: '1rem' }}>
+                                                        <div className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200" style={{ borderRadius: '1rem' }}>
                                                             <ul className="py-2 px-2 text-center">
                                                                 <li><Link href="/kelas/SMA/10" className="block w-full px-4 py-2 text-center border-b border-gray-100 hover:bg-blue-600 hover:text-white rounded-t-xl">Kelas 10</Link></li>
                                                                 <li><Link href="/kelas/SMA/11" className="block w-full px-4 py-2 text-center border-b border-gray-100 hover:bg-blue-600 hover:text-white">Kelas 11</Link></li>
@@ -189,12 +189,12 @@ export default function StudentPage() {
                                         onClick={() => { setActiveDropdown(activeDropdown === 'pelajari' ? null : 'pelajari'); setActiveNav('pelajari'); }}
                                     >
                                         Pelajari
-                                        <svg className="ml-1 h-4 w-4 text-slate-900 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <svg className={["ml-1 h-4 w-4 text-slate-900 group-hover:text-white transform transition-transform duration-200", activeDropdown === 'pelajari' ? 'rotate-180' : 'rotate-0'].join(' ')} fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </button>
                                     {activeDropdown === 'pelajari' && (
-                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-xl bg-white text-slate-900 shadow-lg z-50 border border-black" style={{ borderRadius: '0.75rem', top: '100%' }}>
+                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200" style={{ borderRadius: '0.75rem', top: '100%' }}>
                                             <ul className="py-2 px-2 text-center">
                                                 <li>
                                                     <Link href="/pelajari/student" className="block px-4 py-2 font-semibold border-b border-gray-100 hover:bg-blue-600 hover:text-white rounded-t-xl">Siswa</Link>

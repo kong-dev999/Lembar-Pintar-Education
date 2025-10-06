@@ -49,7 +49,7 @@ const CallToAction = () => {
   return (
     <section
       id="cta-glass-section"
-      className="relative flex items-center justify-center w-full min-h-screen bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 py-20 sm:py-28 md:py-32 overflow-hidden"
+      className="relative flex items-center justify-center w-full min-h-screen bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 py-20 sm:py-28 md:py-16 overflow-hidden"
       style={{ perspective: "1000px" }}
     >
       {/* Animated background glow effects with mouse parallax */}

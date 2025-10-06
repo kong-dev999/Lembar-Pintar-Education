@@ -23,7 +23,7 @@ const ROWS = [
 
 export default function TemplateShowcase() {
   return (
-    <section className="relative w-full py-16 sm:py-8 md:py-10">
+    <section className="relative w-full py-16 sm:py-8 md:py-10 ">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="mb-10 text-center text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
           Buat Materi, Iklan, atau Poster untuk sekolah dalam hitungan menit
@@ -32,7 +32,7 @@ export default function TemplateShowcase() {
 
       {/* Wrapper scroll (satu scroll untuk semua row) */}
       <div className="relative w-full">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-500 -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-blue-50 to-purple-500 shadow-sm -z-10" />
 
         <div className="w-full py-8 md:py-12 overflow-x-auto scrollbar-hide">
           <div className="flex flex-col gap-8">

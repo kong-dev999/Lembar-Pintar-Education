@@ -86,7 +86,7 @@ export default function StudentPage() {
                   >
                     Template
                     <svg
-                      className="ml-1 h-4 w-4 text-slate-900 group-hover:text-white"
+                      className={["ml-1 h-4 w-4 text-slate-900 group-hover:text-white transform transition-transform duration-200", activeDropdown === 'template' ? 'rotate-180' : 'rotate-0'].join(' ')}
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -99,7 +99,7 @@ export default function StudentPage() {
                   </button>
                   {activeDropdown === "template" && (
                     <div
-                      className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black"
+                      className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200"
                       style={{ borderRadius: "1rem", top: "100%" }}
                     >
                       <ul className="py-2 px-2 text-center">
@@ -136,7 +136,7 @@ export default function StudentPage() {
                           </button>
                           {activeSubmenu === "sd" && (
                             <div
-                              className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black"
+                              className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200"
                               style={{ borderRadius: "1rem" }}
                             >
                               <ul className="py-2 px-2 text-center">
@@ -225,7 +225,7 @@ export default function StudentPage() {
                           </button>
                           {activeSubmenu === "smp" && (
                             <div
-                              className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black"
+                              className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200"
                               style={{ borderRadius: "1rem" }}
                             >
                               <ul className="py-2 px-2 text-center">
@@ -290,7 +290,7 @@ export default function StudentPage() {
                           </button>
                           {activeSubmenu === "sma" && (
                             <div
-                              className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-black"
+                              className="absolute top-0 left-full ml-2 w-48 rounded-2xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200"
                               style={{ borderRadius: "1rem" }}
                             >
                               <ul className="py-2 px-2 text-center">
@@ -361,7 +361,7 @@ export default function StudentPage() {
                   >
                     Pelajari
                     <svg
-                      className="ml-1 h-4 w-4 text-slate-900 group-hover:text-white"
+                      className={["ml-1 h-4 w-4 text-slate-900 group-hover:text-white transform transition-transform duration-200", activeDropdown === 'pelajari' ? 'rotate-180' : 'rotate-0'].join(' ')}
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -374,7 +374,7 @@ export default function StudentPage() {
                   </button>
                   {activeDropdown === "pelajari" && (
                     <div
-                      className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-xl bg-white text-slate-900 shadow-lg z-50 border border-black"
+                      className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-xl bg-white text-slate-900 shadow-lg z-50 border border-gray-200"
                       style={{ borderRadius: "0.75rem", top: "100%" }}
                     >
                       <ul className="py-2 px-2 text-center">

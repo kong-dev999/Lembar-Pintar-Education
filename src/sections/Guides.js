@@ -16,7 +16,7 @@ const features = [
 
 const Guides = () => {
   return (
-    <section className="relative w-full bg-gradient-to-b from-white to-slate-50 py-20">
+    <section className="relative w-full bg-gradient-to-r from-indigo-800 via-purple-500 to-purple-300 shadow-sm to-slate-50 py-10">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-2">
         {/* Kiri: showcase template */}
         <motion.div
@@ -24,16 +24,22 @@ const Guides = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 gap-4"
+          className="grid grid-cols-2 gap-4 md:pt-2"
         >
           {["pendidikan.png", "play.png", "food.png", "poster.png"].map(
             (img, i) => (
-              <div key={i} className="overflow-hidden rounded-t-xl rounded-b-xl">
+              <div
+                key={i}
+                className={[
+                  "overflow-hidden rounded-t-xl rounded-b-xl",
+                  i >= 2 ? "mt-6 md:mt-10" : "",
+                ].join(" ")}
+              >
                 <Image
                   src={`/images/tamplate/${img}`}
                   alt={`tamplate ${i + 1}`}
-                  width={480}
-                  height={360}
+                  width={520}
+                  height={400}
                   className="w-full h-auto object-cover rounded-b-xl scale-100 hover:scale-105 transition-transform duration-300"
                   priority={i < 2}
                 />
@@ -56,13 +62,13 @@ const Guides = () => {
 
           <h2 className="mb-6 text-3xl font-extrabold text-slate-900 sm:text-4xl">
             Buat{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-800 to-indigo-800 bg-clip-text text-transparent">
               ribuan desain edukasi
             </span>{" "}
             hanya dalam hitungan menit
           </h2>
 
-          <p className="mb-8 max-w-xl text-slate-600">
+          <p className="mb-8 max-w-xl">
             Dari lembar Pintar, presentasi, hingga poster kreatif. Semua bisa
             kamu desain dengan mudah, cepat, dan tanpa ribet.
           </p>
